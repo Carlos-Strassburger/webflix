@@ -1,0 +1,38 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    background-color: rgba(98, 98, 98, 0.393);
+}
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin: 10px;
+    background-color: rgba(98, 98, 98, 0.393);
+    border-radius: 10px;
+}
+
+.filme{
+    color: white
+}
+
+h2{ 
+    color:white
+}

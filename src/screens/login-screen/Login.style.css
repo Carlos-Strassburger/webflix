@@ -34,6 +34,8 @@
     justify-content: center;
     align-items: center;
     padding: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
     border-radius: 10px;
     background-color: rgba(98, 98, 98, 0.393);
 }
@@ -51,7 +53,7 @@
     font-size: 20px;
     color: white;
     background-color: rgb(255, 65, 65);
-    margin-top: 20px;
+    margin-top: 25px;
     padding: 6px;
 
 }
@@ -64,6 +66,7 @@ label{
 }
 
 h1 {
+    margin-top: 0px;
     font-size: 30px;
     color: white;
 }

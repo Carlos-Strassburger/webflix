@@ -1,7 +1,11 @@
 import './Login.style.css'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+
 export function LoginScreen() {
   const [userInfo, setUserInfo] = useState({ email: '', password: '' })
+  const navigate = useNavigate()
+  const errorMessage = 'Email ou senha inválidos'
 
   function handleChange(event) {
     const { name, value } = event.target
@@ -11,7 +15,9 @@ export function LoginScreen() {
 
   function handleSubmit() {
     if(userInfo.email === 'carlos@unisinos.com.br' && userInfo.password === '123456') {
-      console.log('Login realizado com sucesso')
+      navigate('/home')
+    } else {
+        alert(errorMessage)
     }
   }
 
@@ -21,7 +27,6 @@ export function LoginScreen() {
         <div className='container-direita'>
             <h1 className='titulo-login'>Webflix</h1>
         </div>
-
         <div className='container-direita'>
           <div className='login-screen'>
             <h1>Login</h1>
