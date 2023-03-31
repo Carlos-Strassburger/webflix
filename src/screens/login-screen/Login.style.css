@@ -19,3 +19,32 @@
     justify-content: center;
     align-items: center;
 }
+
+.login-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgba(2, 2, 2, 0.591);
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+}

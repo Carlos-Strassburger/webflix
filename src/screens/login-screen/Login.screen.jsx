@@ -9,6 +9,12 @@ export function LoginScreen() {
     console.log(userInfo)
   }
 
+  function handleSubmit() {
+    if(userInfo.email === 'carlos@unisinos.com.br' && userInfo.password === '123456') {
+      console.log('Login realizado com sucesso')
+    }
+  }
+
   return (
     <>
       <section className='login'>
@@ -16,9 +22,9 @@ export function LoginScreen() {
 
         <div className='container-direita'>
           <div className='login-screen'>
-            <h1>Login Screen</h1>
+            <h1>Login</h1>
             <div className='login-form'>
-              <form action=''>
+              <form action='' className='form-login'>
                 <label htmlFor='email'>Email</label>
                 <input
                   type='email'
@@ -36,6 +42,7 @@ export function LoginScreen() {
                   value={userInfo.password}
                 />
               </form>
+              <button className='button' onClick={handleSubmit}>Login</button>
             </div>
           </div>
         </div>
