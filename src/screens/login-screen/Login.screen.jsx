@@ -18,7 +18,9 @@ export function LoginScreen() {
   return (
     <>
       <section className='login'>
-        <div className='container-direita'></div>
+        <div className='container-direita'>
+            <h1 className='titulo-login'>Webflix</h1>
+        </div>
 
         <div className='container-direita'>
           <div className='login-screen'>
